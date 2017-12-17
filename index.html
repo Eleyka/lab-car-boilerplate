@@ -1,1 +1,389 @@
 <!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eleyka "LabCar"</title>
+  <!--Icommon-->
+  <link rel="stylesheet" href="assets/icomoon/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <header>
+    <!--Menú-->
+    <nav class="navbar navbar-default mod-nav ">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="padding-15" src="assets/images/logoForma.png" alt="logo-forma">
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse padding-15" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">Viaja</a>
+            </li>
+            <li>
+              <a href="#">Conduce</a>
+            </li>
+            <li>
+              <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Iniciar Sesión </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </header>
+  <!--..................................1ra Sección..............................................................-->
+  <section id="hero" class="container flex-end">
+    <div class="row bg-color padding-35">
+      <!--Para móvil-->
+      <div class="visible-xs hidden-lg">
+        <h2>Comienza a Viajar
+          <p>con
+            <img class="logo-white" src="assets/images/logoBlanco.png" alt="logo-blanco">
+          </p>
+        </h2>
+
+        <p>
+          <a class="btn bold-font">Descarga el app</a>
+        </p>
+      </div>
+      <!--Para Desktop-->
+      <div class="hidden-xs visible-sm visible-md visible-lg ">
+        <h2>Disfruta del viaje
+          <p>Eres Dueño de tu tiempo</p>
+        </h2>
+        <p>Viaja con
+          <img class="logo-white" src="assets/images/logoBlanco.png" alt="logo-blanco">
+        </p>
+        <p>
+          <a class="btn bold-font" href="#modalRegistrar" data-toggle="modal" data-target="#modalRegistrar">REGÍSTRATE</a>
+        </p>
+      
+        <div class="separation ">
+           <p class="size2">O bien</p>
+        </div>
+        <p>
+          <a class="btn bold-font" href="#modalConductor" data-toggle="modal" data-target="#modalConductor">Conviertete en un conductor</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!--Modal de Iniciar Seción-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <img class="rostro" src="assets/images/rostro.jpg" alt="rostro">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="formModal">
+              <div class="form-group">
+                <label for="shape">
+                  <span class="icon-user"></span>
+                </label>
+                <input class="placeholder-color input-is" type="text" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="shape">
+                  <span class="icon-lock"></span>
+                </label>
+                <input class="placeholder-color input-is" type="password" placeholder="Password">
+              </div>
+              <div class="modal-footer ">
+                <button type="button" class="btn btn-color ">LOGING</button>
+              </div>
+              <p>Forgot password?
+                <span class="click-color">Click Here</span>
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Fin del Modal de Iniciar Seción-->
+
+    <!--Modal de Registrece-->
+    <div class="modal fade" id="modalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog md2" role="document">
+        <div class="modal-content2">
+          <div class="modal-header text-center no-line">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="formModal2">
+              <div class="form-group ">
+                <button type="button" class="btn btn-color2 text-center size">Ya tienes una cuenta nueva?</button>
+              </div>
+              <div class="form-group ">
+                <p class="text-center">O CREA UNA CONTRASEÑA NUEVA</p>
+              </div>
+              <div class="form-group col-sm-6 padding-na">
+                <input class="placeholder-color input-reg size " type="text" placeholder="Nombre">
+              </div>
+              <div class="form-group col-sm-6 padding-na">
+                <input class="placeholder-color input-reg size  " type="text" placeholder="Apellido">
+              </div>
+              <div class="form-group">
+                <input class="placeholder-color input-reg size" type="text" placeholder="Correro Electrónico ejemplo@correo.mx">
+              </div>
+              <div class="form-group">
+                <input class="placeholder-color input-reg size" type="text" placeholder="Teléfono">
+              </div>
+              <div class="form-group">
+                <input class="placeholder-color input-reg size" type="password" placeholder="Contraseña">
+              </div>
+              <div class="form-group">
+                <input class="placeholder-color input-reg size" type="text" placeholder="Ciudad">
+              </div>
+              <div class="form-group">
+                <input class="placeholder-color input-reg size" type="text" placeholder="(Opcional) Código de invitación">
+              </div>
+              <div class="form-group ">
+                <button type="button" class="btn btn-color3 size">Como te enteraste de nosotros?
+                  <span class="icon-chevron-down"></span>
+                </button>
+              </div>
+              <div class="form-group ">
+                <button type="button" class="btn btn-color4 size">ENVIAR</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--Fin del Modal de Registrece-->
+
+
+
+
+  </section>
+
+  <!--..................................2da Sección..............................................................-->
+  <section id="sec-2" class="container-fluid bg-color">
+    <div class="row  padding-2 bg-color">
+      <!--Para móvil-->
+      <div class="visible-xs visible-sm hidden-md hidden-lg padding-3">
+        <div class="margin-s3">
+          <h2 class="text-center">La nueva app</h2>
+          <img class="img-reponsive" src="assets/images/iPhone6Plus.png" alt="iPhone6Plus">
+        </div>
+        <p class="padding-4">Llega a tu destino más rápido</p>
+      </div>
+      <!--Para Desktop-->
+      <div class="visible-lg visible-md hidden-xs hidden-sm ">
+        <div class="col-md-9 border-s2 padding-35">
+          <div class="col-md-5">
+            <img class="img-reponsive" src="assets/images/iPhone6Plus.png" alt="iPhone6Plus">
+          </div>
+          <div class="col-md-4">
+            <h2>Descarga la nueva app</h2>
+            <p>La versión actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+            <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes tu conductor sabe exactamente
+              a donde ir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--.........................................3ra Sección.............................................-->
+  <section id="sec-3" class="container-fluid">
+    <!--Para móvil y desktop-->
+    <div class="row">
+      <div class="col-md-8"></div>
+      <div class="opacidad col-md-4">
+        <h2 >Conduce cuando quieras</h2>
+        <p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
+        <p>
+          <a class="btn bold-font bg-color-btn" href="#modalConductor" data-toggle="modal" data-target="#modalConductor">Conviértete en un conductor</a>
+        </p>
+      </div>
+    </div>
+    <!--..................Modal 3: Y modal de Convierte en conductor....................................-->
+    <div class="modal fade" id="modalConductor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog md2" role="document">
+        <div class="modal-content2">
+          <div class="modal-header text-center no-line">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="formModal2">
+              <p class="style-text">¿Tienes vehículo de 4 puertas?</p>
+              <div class="form-group">
+                <select name="option1" class="size">
+                  <option>Sí</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p class="style-text">Marca</p>
+                <select name="option2" class="size">
+                  <option selected value="0"> Elige la marca del vehículo</option>
+                  <option>Toyota</option>
+                  <option>Lamborghini</option>
+                  <option>Ferrari</option>
+                  <option>BMW</option>
+                  <option>Mercedes-Benz</option>
+                  <option>Ford</option>
+                  <option>Chevrolet</option>
+                  <option>Honda</option>
+                  <option>Volkswagen</option>
+                </select>
+                <p class="style-text3">¿No ves tu vehículo en la lista envia un correo electrónico a?<br> <a>sociosmdv@uber.com</a></p>
+                
+                
+              </div>
+              <div class="form-group">
+                <p class="style-text">Modelo</p>
+                <select name="option3" class="size">
+                  <option>Modelo 1A</option>
+                  <option>Modelo 2B</option>
+                  <option>Modelo 3C</option>
+                  <option>Modelo 4D</option>
+                  <option>Modelo 5E</option>
+
+                </select>
+              </div>
+              <div class="form-group">
+                <p class="style-text">Año</p>
+                <select name="option4" class="size">
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+
+                </select>
+              </div>
+              <div class="form-group">
+                <p class="style-text">Número de matricula</p>
+                <input class="placeholder-color input-reg size" type="text" placeholder="Número de matricula">
+                <p class="style-text2">La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+              </div>
+              <div class="form-group ">
+                <button type="button" class="btn btn-color4 size">ENVIAR</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--.................. Fin Modal 3: Y modal de Convierte en conductor....................................-->
+  </section>
+  <!--.........................................4ta Sección..................................................-->
+  <section class="container-fluid bg-color">
+    <div class="row  ">
+      <div class="col-md-5 padding-5">
+        <h2>Tarifas</h2>
+        <p>Consulta las tarifas LabCar aquì</p>
+        <form>
+          <div class="form-group">
+            <label for="shape">
+              <img src="assets/images/shape.png" alt="punto">
+            </label>
+            <input id="shape" placeholder="Ingrese punto de partida">
+          </div>
+          <div class="form-group">
+            <label for="shape2">
+              <img src="assets/images/shape2.png" alt="flecha">
+            </label>
+            <input id="shape2" placeholder="Ingrese su destino">
+          </div>
+        </form>
+        <p class="text-center">
+          <a class="btn bold-font">¡TRAZAR RUTA!</a>
+        </p>
+      </div>
+      <div class="col-md-7 padding-7">
+        <img class="img-responsive border-map" src="assets/images/mapa.PNG" alt="mapa">
+      </div>
+    </div>
+  </section>
+  <!--.............................................Pié de página................................................-->
+  <footer class="container-fluid  bg-footer">
+    <!--Para móvil-->
+    <div class="col-xs-12 ">
+      <div>
+        <img class="logo-footer" src="assets/images/logoBlanco.png" alt="logo-blanco">
+      </div>
+      <hr>
+      <div class="row">
+          <div class="footer col-xs-6 col-sm-3  col-md-3 f1 col-lg-3 icon-space   ">
+              <span class="icon-facebook"></span>
+              <span class="icon-twitter"></span>
+              <span class="icon-linkedin"></span>
+              <span class="icon-appleinc"></span>
+              <span class="icon-destino"></span>
+            </div>
+        <div class="footer col-xs-6 col-md-3 col-sm-3 f2 ">
+          <ul class="list">
+            <li>Viaja</li>
+            <li>Conduce</li>
+            <li>Ciudades</li>
+            <li>Ciudades</li>
+            <li>Entregas</li>
+            <li>Como funciona?</li>
+            <li>Paíces</li>
+            <li>Seguridad</li>
+          </ul>
+        </div>
+        <div class="footer col-sm-3 col-md-3 hidden-xs f3 ">
+          <ul class="list">
+            <li>Oportunidades</li>
+            <li>Nuestra Historia</li>
+            <li>Api de LabCar</li>
+            <li>Eventos</li>
+            <li>Desarrolladores</li>
+            <li>Servicios</li>
+            <li>Laboratoria</li>
+            <li>Coders</li>
+          </ul>
+        </div>
+        
+        <div class="col-xs-6 col-sm-3 col-md-3 f4 ">
+          <img class="img-responsive space" src="assets/images/enBadgeWebGeneric.png" alt="google-play">
+          <img class="img-responsive space" src="assets/images/appstore.png" alt="apple">
+        </div>
+      </div>
+      <hr>
+      <p class="text-footer"> &#169; LabCar technologies inc.</p>
+    </div>
+  </footer>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
