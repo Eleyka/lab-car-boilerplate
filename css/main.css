@@ -1,14 +1,12 @@
-/* Los estilos de tu proyecto */
-
 /*Tipo de letra*/
 body{
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
-/*..................................1ra Sección..............................................................*/
-/*Imagen del hero*/
+/* ..................................1ra Sección.............................................................. */
+/* Imagen del hero */
 #hero{
-  background-image: url(../../assets/images/taxi.jpg);
+  background-image: url(../assets/images/taxi.jpg);
   background-repeat: no-repeat;
   background-position: 0;
   background-size: cover;
@@ -16,62 +14,58 @@ body{
   width: 100%;
   height: 600px;
 }
-/*fondo de color para div superpuestos*/
+/* fondo de color para div superpuestos */
 .bg-color{
   background-color: #f7b617;
   color: white;
 }
-
-/*padding-35*/
+/* padding-35 */
 .padding-35{
   padding: 35px;
 }
-/*Boton del hero*/
+/* Boton del hero */
 .btn{
-padding: 7px;
-border-radius:5px;
-background-color: #ffffff;
-color: #0b141d;
+  padding: 7px;
+  border-radius:5px;
+  background-color: #ffffff;
+  color: #0b141d;
 }
-/*Hago uso del flex para pocisionar mi div*/
-.container{
+/* Hago uso del flex para pocisionar mi div */
+.container-1s{
   display: flex;
 }
 .flex-end {
-   align-items: center;
+  align-items: center;
   justify-content: flex-end;
 }
-/*Defino el tamaño del logo blanco*/
+/* Defino el tamaño del logo blanco */
 .logo-white{
   width: 30%;
 }
-/*La distancia entre h2 y bootom*/
+/* La distancia entre h2 y bootom */
 h2{
   margin-bottom: 25px;
   color: white;
   font-size: 30px;
-  font-weight: bold;
-  
+  font-weight: bold; 
 }
 p, .btn{
-  font-size: 18px;
-  
+  font-size: 18px; 
 }
-/*Quitando margin al nav*/
+/* Quitando margin al nav */
 .mod-nav{
   margin-bottom: 0;
   border-radius: 0;
   background-color: #ffffff;
 }
-/*padding padding 15*/
+/* padding padding 15 */
 .padding-15{
   padding: 15px;
   }
-  .bold-font{
-    font-weight: bold;
-  }
-  
- /*Para la separación de la raya y la frase O bien*/ 
+.bold-font{
+  font-weight: bold;
+  } 
+ /* Para la separación de la raya y la frase O bien */ 
  .separation{
   display: inline-block;
   position: relative; 
@@ -79,8 +73,7 @@ p, .btn{
   font-size: 10px;
   z-index: 1;
   margin-left: 100px;
-  
-}
+ }
 .separation::after, .separation::before {
   border-bottom: 1px solid #fff;
   bottom: 50%;
@@ -91,21 +84,19 @@ p, .btn{
   padding-left: 100px;
 }
 .separation::before {
-  left: -130px;
-  
+  left: -130px;  
 }
-
 .separation::after {
   right: -130px;
 }
 .size2{
   font-size: 13px;
 }
+/* .row {
+    margin-right:0; 
+} */
 
-
-
-
-/*..................................2da Sección..............................................................*/
+/* ..................................2da Sección.............................................................. */
 .padding-2{
   padding: 35px 0;
 }
@@ -124,9 +115,9 @@ p, .btn{
 .padding-4{
   padding: 0 35px;
 }
-/*..................................3ra Sección..............................................................*/
+/* ..................................3ra Sección.............................................................. */
 #sec-3{
-  background-image: url(../../assets/images/conduce.jpg);
+  background-image: url(../assets/images/conduce.jpg);
   background-repeat: no-repeat;
   background-position: 0;
   background-size: cover;
@@ -141,22 +132,49 @@ p, .btn{
   height: 400px;
 }
 .bg-color-btn{
-background-color: #f7b617;
-color: white;
+  background-color: #f7b617;
+  color: white;
 }
-/*..................................4ta Sección..............................................................*/
+/* Mapa responsive */
+.google-maps {
+  position: relative;
+  padding-bottom: 40%; 
+   
+  }
+.google-maps iframe {
+  position: absolute;
+  width: 100% !important;
+  }
+/* ..................................4ta Sección.............................................................. */
 .padding-5{
-  padding: 50px 80px;
+  padding: 5% ;
 }
 .padding-7{
   padding: 2% 5%;
 }
-.border-map{
-  border: 1px solid #ffffff;
-  margin: 15px;
-  padding: 7px;
+.border-map2{
+  border: 1px solid white;
+  padding: 5px;
 }
-#shape, #shape2{
+.border-map{
+  border: 1px solid white;
+}
+/* Mapa responsive */
+.google-maps {
+  position: relative;
+  padding-bottom: 70%; 
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 15px;
+}
+#pointGoing, #pointDestiny{
   background-color: transparent;
   box-shadow: none;
   color: white;
@@ -166,71 +184,51 @@ color: white;
   border: 1px solid white;
   margin: 5px;
 }
-::placeholder { color: white; }
-/*..................................Footer..............................................................*/
-.list{
-  list-style: none;
-  padding: 0;
+::placeholder { 
+  color: white; 
 }
 .bg-footer{
   background-color: #2b2b2b;
   color: #d0d0d0;
 }
-.footer{
-  padding: 20px;
-  line-height: 40px
-  
+.icon-space {
+  padding-right: 10px;
+}
+.mg-top{
+  margin-top: 15px;
+}
+ul, menu, dir {   
+  -webkit-padding-start: 0;
 }
 .space{
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 8%;
 }
-.icon-space{
-  padding-right: 10px;
-}
-.logo-footer{
-width:180px;
-padding: 20px;
+.lh{
+  line-height:35px;
+  list-style:none;
 }
 .text-footer{
-  font-size: 12px;
-  /*Para las posiciones del footer en Desktop*/
+    font-size: 12px;
+}
+@media (min-width: 768px) {
+.f1{
+  transform: translate(0, 260px);
+}   
+.f4{
+  transform: translate(0, 130px);
+}
 }
 @media (max-width: 768px) {
-  .f1{
-    transform: translate(150px, 0);
-  }
-    .f2 {
-    transform: translate(-150px, 0);
-  }
- .f4{
-  transform: translate(150px, -200px);
- }
-
-}
-@media (min-width: 992px) {
-  .f1{
-    transform: translate(0, 300px);
-  }
-    .f2, .f3{
-    transform: translate(50px, 0);
-  }
- .f4{
-  transform: translate(0, 200px);
- }
-
-}
-@media (max-width: 768px) {
-
-/*posición del nav en movile*/
+/* posición del nav en movile */
 .navbar-toggle{
   float: left;
   margin-left: 15px;
 }
 }
-/*..........................................Modal 1:Iniciar Seción......................................*/
-.placeholder-color::placeholder { color: #2b2b2b; }.
+/* ..........................................Modal 1:Iniciar Seción...................................... */
+.placeholder-color::placeholder { color: #2b2b2b; }
 .icon-user, .icon-lock{
   padding: 5px;
   background-color: #dfdddd;
@@ -248,16 +246,15 @@ padding: 20px;
   border-radius:5px;
 }
 .input-is{
-width: 90%;
+  width: 90%;
 }
-.modal-footer {
-
+.modal-footer { 
   text-align: center;
   color: white;
 }
 .btn-color{
-background-color:   #f0ad4e;
-color: white;
+  background-color:   #f0ad4e;
+  color: white;
 }
 .click-color{
   color: #ce3d5c;
@@ -265,23 +262,23 @@ color: white;
 .rostro{
   width: 150px;
   border-radius:50%;
- }
- .modal-content {
+}
+.modal-content {
   background-color: rgb(209, 155, 155);
-  }
-  .btn-color2{
-    background-color: black;
-    color: white;
-  }
-  .btn-color3{
-    background-color: #dad6d6;
-    color: black;
-  }
-  .btn-color4{
-    background-color: #47aeca;
-    color: white;
-  }
-  /*..................................Modal 2: Modal Registrece...................................................*/
+}
+.btn-color2{
+  background-color: black;
+  color: white;
+}
+.btn-color3{
+  background-color: #dad6d6;
+  color: black;
+}
+.btn-color4{
+  background-color: #47aeca;
+  color: white;
+}
+  /* ..................................Modal 2: Modal Registrece................................................... */
 .no-line{
   border-bottom: 0;
 }
@@ -293,16 +290,15 @@ color: white;
   border-radius:5px;
 }
 .size{
-width: 100%;
-padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 .md2 {
-  width: 500px;
-  
+  width: 500px;  
 }
 .input-reg{
-padding: 5px;
-border-radius:5px;
+  padding: 5px;
+  border-radius:5px;
 }
 .padding-na {
   padding-right: 0;
@@ -312,14 +308,14 @@ border-radius:5px;
   background-color: #b1aaaa;
   border-radius:5px;
 }
-  /*.............................Modal 3: Y modal de Convierte en conductor ........................................*/
-  .style-text{
-font-size: 15px;
-font-weight: bold;
-  }
-  .style-text2{
-    font-size: 15px;
-  }
-  .style-text3{
-    font-size: 13px;
-  }
+  /* .............................Modal 3: Y modal de Convierte en conductor ........................................ */
+.style-text{
+  font-size: 15px;
+  font-weight: bold;
+}
+.style-text2{
+  font-size: 15px;
+}
+.style-text3{
+  font-size: 13px;
+}
