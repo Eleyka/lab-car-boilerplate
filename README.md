@@ -4,7 +4,8 @@ LabCar nueva app que va ayudar a la gente a librarse de los atascos y pueda, as√
 
 ![Lab-Car-Preview](https://user-images.githubusercontent.com/32303570/36360422-5d68c6fe-14e9-11e8-87f0-e524a1565c52.png)
 
-## Desarrollado para [Laboratoria](http://laboratoria.la)
+## Desarrollado para
+[Laboratoria](http://laboratoria.la)
 
 ## Objetivo
 
